@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/razieliyo/Dropbox/enet/src/client101.cpp
+cstdlib
+-
+cstring
+-
+iostream
+-
+enet/enet.h
+-
+omp.h
+-
+boost/thread.hpp
+-
+
