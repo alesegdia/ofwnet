@@ -1,1 +1,0 @@
-razieliyo@blackjack.2348:1362399094
