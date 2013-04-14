@@ -435,11 +435,14 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qa
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qatomic_x86_64.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qbasicatomic.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qbasictimer.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qbuffer.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qbytearray.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qchar.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qconfig.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qcoreapplication.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qcoreevent.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qdatastream.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qeventloop.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qfeatures.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qfile.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qglobal.h
@@ -458,6 +461,7 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qo
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qobjectdefs.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qpair.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qpoint.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qpointer.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qrect.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qregexp.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qscopedpointer.h
@@ -473,12 +477,15 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qs
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qtimer.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qvariant.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtCore/qvector.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/QApplication
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/QMainWindow
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/QPlatformWindow
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/QWidget
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qapplication.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qbrush.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qcolor.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qcursor.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qdesktopwidget.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qdrag.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qevent.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qfont.h
@@ -503,6 +510,7 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qrg
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qsizepolicy.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qtabwidget.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qtransform.h
+src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qtransportauth_qws.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qwidget.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qwindowdefs.h
 src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o: /usr/include/qt4/QtGui/qwindowdefs_win.h

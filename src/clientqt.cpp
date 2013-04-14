@@ -33,6 +33,7 @@ int main(int argc, char** argv)
 	std::cout << "cliente seteado\n";
 	boost::thread t(boost::bind(&client::run, c));
 
+	window.setQApp(&app);
 	window.show();
 	app.exec();
 

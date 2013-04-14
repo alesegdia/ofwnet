@@ -11,7 +11,6 @@
 
 client::~client()
 {
-	//delete _peer;
 	enet_host_destroy(_client);
 }
 
@@ -58,14 +57,12 @@ void client::run()
                 std::cout << "Conexion con "
                     << std::hex << _event.peer->address.host << std::endl;
                 std::cout.flush();
-                //_event.peer->data = strdup(name.c_str());
                 break;
 
             case ENET_EVENT_TYPE_RECEIVE:
                 std::cout << "Msg: " << _event.packet->data << std::endl;
                 std::cout.flush();
 
-				//qs.append(name + ": ");
 				qs.append((const char*)(_event.packet->data));
                 qs.append("\n");
 				emit bufferUpdated();
@@ -74,7 +71,6 @@ void client::run()
 
             case ENET_EVENT_TYPE_DISCONNECT:
                 std::cout << _event.peer->data << " disconnected." << std::endl;
-                //if(_event.peer->data!=NULL) free(_event.peer->data);
                 std::cout.flush();
             }
         }
@@ -96,6 +92,5 @@ void client::broadcast_data(std::string s)
 	{
 		ENetPacket *packet = enet_packet_create(line.c_str(), line.size()+1, ENET_PACKET_FLAG_RELIABLE);
 		enet_peer_send(_peer, 0, packet);
-		//enet_packet_destroy(packet);
 	}
 }

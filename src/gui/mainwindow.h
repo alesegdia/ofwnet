@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "../client.hpp"
 #include <QTimer>
+#include <QApplication>
 
 namespace Ui {
 class MainWindow;
@@ -15,17 +16,18 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    virtual ~MainWindow();
 
 	void keyPressEvent(QKeyEvent* pe);
     void setclient(client* c);
+    void setQApp(QApplication *qapp);
 
 private slots:
 	void onButtonClicked();
 	void onBufferReload();
 
 private:
-	QTimer* _timer;
+	QApplication *_qapp;
 	client *_c;
     Ui::MainWindow *ui;
 };

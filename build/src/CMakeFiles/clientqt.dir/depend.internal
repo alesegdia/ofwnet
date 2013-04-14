@@ -436,11 +436,14 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o
  /usr/include/qt4/QtCore/qatomic_x86_64.h
  /usr/include/qt4/QtCore/qbasicatomic.h
  /usr/include/qt4/QtCore/qbasictimer.h
+ /usr/include/qt4/QtCore/qbuffer.h
  /usr/include/qt4/QtCore/qbytearray.h
  /usr/include/qt4/QtCore/qchar.h
  /usr/include/qt4/QtCore/qconfig.h
+ /usr/include/qt4/QtCore/qcoreapplication.h
  /usr/include/qt4/QtCore/qcoreevent.h
  /usr/include/qt4/QtCore/qdatastream.h
+ /usr/include/qt4/QtCore/qeventloop.h
  /usr/include/qt4/QtCore/qfeatures.h
  /usr/include/qt4/QtCore/qfile.h
  /usr/include/qt4/QtCore/qglobal.h
@@ -459,6 +462,7 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o
  /usr/include/qt4/QtCore/qobjectdefs.h
  /usr/include/qt4/QtCore/qpair.h
  /usr/include/qt4/QtCore/qpoint.h
+ /usr/include/qt4/QtCore/qpointer.h
  /usr/include/qt4/QtCore/qrect.h
  /usr/include/qt4/QtCore/qregexp.h
  /usr/include/qt4/QtCore/qscopedpointer.h
@@ -474,12 +478,15 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o
  /usr/include/qt4/QtCore/qtimer.h
  /usr/include/qt4/QtCore/qvariant.h
  /usr/include/qt4/QtCore/qvector.h
+ /usr/include/qt4/QtGui/QApplication
  /usr/include/qt4/QtGui/QMainWindow
  /usr/include/qt4/QtGui/QPlatformWindow
  /usr/include/qt4/QtGui/QWidget
+ /usr/include/qt4/QtGui/qapplication.h
  /usr/include/qt4/QtGui/qbrush.h
  /usr/include/qt4/QtGui/qcolor.h
  /usr/include/qt4/QtGui/qcursor.h
+ /usr/include/qt4/QtGui/qdesktopwidget.h
  /usr/include/qt4/QtGui/qdrag.h
  /usr/include/qt4/QtGui/qevent.h
  /usr/include/qt4/QtGui/qfont.h
@@ -504,6 +511,7 @@ src/CMakeFiles/clientqt.dir/gui/moc_mainwindow.cxx.o
  /usr/include/qt4/QtGui/qsizepolicy.h
  /usr/include/qt4/QtGui/qtabwidget.h
  /usr/include/qt4/QtGui/qtransform.h
+ /usr/include/qt4/QtGui/qtransportauth_qws.h
  /usr/include/qt4/QtGui/qwidget.h
  /usr/include/qt4/QtGui/qwindowdefs.h
  /usr/include/qt4/QtGui/qwindowdefs_win.h

@@ -11,15 +11,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    //ui->pushButton->setDefault(true);
-    _timer = new QTimer(this);
-
-    //connect(_timer, SIGNAL(timeout()), this, SLOT(onBufferReload()));
-    //_timer->start(1000);
 	connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(onButtonClicked()));
 }
-
-  //connect(ui->b_create, SIGNAL(clicked()), this, SLOT(on_b_create_clicked()));
 
 void MainWindow::keyPressEvent(QKeyEvent* pe)
 {
@@ -33,8 +26,12 @@ void MainWindow::keyPressEvent(QKeyEvent* pe)
 
 MainWindow::~MainWindow()
 {
-	delete _timer;
     delete ui;
+}
+
+void MainWindow::setQApp(QApplication* qapp)
+{
+	_qapp = qapp;
 }
 
 void MainWindow::onButtonClicked()
@@ -45,6 +42,7 @@ void MainWindow::onButtonClicked()
 
 void MainWindow::onBufferReload()
 {
+	_qapp->alert(this, 5000);
 	ui->textEdit->clear();
 	ui->textEdit->append(_c->getqstring());
 }
