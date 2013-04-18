@@ -6,7 +6,7 @@
 #include <QtGui/QApplication>
 #include "gui/mainwindow.h"
 #include "client.hpp"
-
+#include <AL/al.h>
 
 int main(int argc, char** argv)
 {

@@ -5,6 +5,7 @@
 #include "../client.hpp"
 #include <QTimer>
 #include <QApplication>
+#include <QSound>
 
 namespace Ui {
 class MainWindow;
@@ -27,6 +28,7 @@ private slots:
 	void onBufferReload();
 
 private:
+	QSound *_sample;
 	QApplication *_qapp;
 	client *_c;
     Ui::MainWindow *ui;

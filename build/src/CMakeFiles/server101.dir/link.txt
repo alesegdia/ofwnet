@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++0x -fopenmp    CMakeFiles/server101.dir/server101.cpp.o  -o ../../bin/server101 -rdynamic -lenet -lQtGui -lQtCore -lprotobuf -Wl,-Bstatic -lboost_system-mt -lboost_thread-mt -Wl,-Bdynamic -lopenal 

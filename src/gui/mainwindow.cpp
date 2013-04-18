@@ -4,6 +4,7 @@
 #include "../client.hpp"
 #include <string>
 #include <QKeyEvent>
+#include <iostream>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -12,6 +13,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 	connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(onButtonClicked()));
+
+	_sample = new QSound("sonido.wav", this);
+    _sample->setLoops(5);
+	connect(ui->pushButton, SIGNAL(clicked()), _sample, SLOT(play()));
 }
 
 void MainWindow::keyPressEvent(QKeyEvent* pe)
@@ -42,6 +47,8 @@ void MainWindow::onButtonClicked()
 
 void MainWindow::onBufferReload()
 {
+	QSound::play("sonido.wav");
+	_sample->play();
 	_qapp->alert(this, 5000);
 	ui->textEdit->clear();
 	ui->textEdit->append(_c->getqstring());

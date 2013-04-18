@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++0x -fopenmp    CMakeFiles/msgserializ.dir/serialize.cpp.o CMakeFiles/msgserializ.dir/netmsg.pb.cc.o  -o ../../bin/msgserializ -rdynamic -lenet -lQtGui -lQtCore -lprotobuf -Wl,-Bstatic -lboost_system-mt -lboost_thread-mt -Wl,-Bdynamic -lopenal 
