@@ -1,11 +1,12 @@
-message netmsg {
-	required int32 id = 1;
-	required string data = 2;
-}
-
 message create_player_data {
 	required int32 h = 1;
 	required int32 w = 2;
 	required int32 tipo = 3;
 	required string name = 4;
 }
+
+message create_player_response {
+	required bool ok = 1;
+	optional int32 error = 2;
+}
+
