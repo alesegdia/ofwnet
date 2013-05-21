@@ -1,12 +1,16 @@
 # Name the sources
 set(TARGETS client101
 			clientqt
-			server101)
+			server101
+			serverOFW
+			clientOFW)
 			#server_tema)
 
 set(client101_SRC client101.cpp)
 set(server101_SRC server101.cpp)
 set(server_tema_SRC server_player_creation.cpp)
+set(clientOFW_SRC client_player_creation.cpp)
+set(serverOFW_SRC server_player_creation.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 

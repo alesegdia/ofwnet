@@ -110,6 +110,20 @@ client101/fast:
 .PHONY : client101/fast
 
 # Convenience name for target.
+src/CMakeFiles/clientOFW.dir/rule:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/clientOFW.dir/rule
+.PHONY : src/CMakeFiles/clientOFW.dir/rule
+
+# Convenience name for target.
+clientOFW: src/CMakeFiles/clientOFW.dir/rule
+.PHONY : clientOFW
+
+# fast build rule for target.
+clientOFW/fast:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/build
+.PHONY : clientOFW/fast
+
+# Convenience name for target.
 src/CMakeFiles/clientqt.dir/rule:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/clientqt.dir/rule
 .PHONY : src/CMakeFiles/clientqt.dir/rule
@@ -124,20 +138,6 @@ clientqt/fast:
 .PHONY : clientqt/fast
 
 # Convenience name for target.
-src/CMakeFiles/msgserializ.dir/rule:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/msgserializ.dir/rule
-.PHONY : src/CMakeFiles/msgserializ.dir/rule
-
-# Convenience name for target.
-msgserializ: src/CMakeFiles/msgserializ.dir/rule
-.PHONY : msgserializ
-
-# fast build rule for target.
-msgserializ/fast:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/build
-.PHONY : msgserializ/fast
-
-# Convenience name for target.
 src/CMakeFiles/server101.dir/rule:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server101.dir/rule
 .PHONY : src/CMakeFiles/server101.dir/rule
@@ -150,6 +150,20 @@ server101: src/CMakeFiles/server101.dir/rule
 server101/fast:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/server101.dir/build.make src/CMakeFiles/server101.dir/build
 .PHONY : server101/fast
+
+# Convenience name for target.
+src/CMakeFiles/serverOFW.dir/rule:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/serverOFW.dir/rule
+.PHONY : src/CMakeFiles/serverOFW.dir/rule
+
+# Convenience name for target.
+serverOFW: src/CMakeFiles/serverOFW.dir/rule
+.PHONY : serverOFW
+
+# fast build rule for target.
+serverOFW/fast:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/build
+.PHONY : serverOFW/fast
 
 client.o: client.cpp.o
 .PHONY : client.o
@@ -198,6 +212,30 @@ client101.s: client101.cpp.s
 client101.cpp.s:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/client101.dir/build.make src/CMakeFiles/client101.dir/client101.cpp.s
 .PHONY : client101.cpp.s
+
+client_player_creation.o: client_player_creation.cpp.o
+.PHONY : client_player_creation.o
+
+# target to build an object file
+client_player_creation.cpp.o:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o
+.PHONY : client_player_creation.cpp.o
+
+client_player_creation.i: client_player_creation.cpp.i
+.PHONY : client_player_creation.i
+
+# target to preprocess a source file
+client_player_creation.cpp.i:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.i
+.PHONY : client_player_creation.cpp.i
+
+client_player_creation.s: client_player_creation.cpp.s
+.PHONY : client_player_creation.s
+
+# target to generate assembly for a file
+client_player_creation.cpp.s:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.s
+.PHONY : client_player_creation.cpp.s
 
 clientqt.o: clientqt.cpp.o
 .PHONY : clientqt.o
@@ -295,54 +333,6 @@ moc_client.cxx.s:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientqt.dir/build.make src/CMakeFiles/clientqt.dir/moc_client.cxx.s
 .PHONY : moc_client.cxx.s
 
-netmsg.pb.o: netmsg.pb.cc.o
-.PHONY : netmsg.pb.o
-
-# target to build an object file
-netmsg.pb.cc.o:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/netmsg.pb.cc.o
-.PHONY : netmsg.pb.cc.o
-
-netmsg.pb.i: netmsg.pb.cc.i
-.PHONY : netmsg.pb.i
-
-# target to preprocess a source file
-netmsg.pb.cc.i:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/netmsg.pb.cc.i
-.PHONY : netmsg.pb.cc.i
-
-netmsg.pb.s: netmsg.pb.cc.s
-.PHONY : netmsg.pb.s
-
-# target to generate assembly for a file
-netmsg.pb.cc.s:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/netmsg.pb.cc.s
-.PHONY : netmsg.pb.cc.s
-
-serialize.o: serialize.cpp.o
-.PHONY : serialize.o
-
-# target to build an object file
-serialize.cpp.o:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/serialize.cpp.o
-.PHONY : serialize.cpp.o
-
-serialize.i: serialize.cpp.i
-.PHONY : serialize.i
-
-# target to preprocess a source file
-serialize.cpp.i:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/serialize.cpp.i
-.PHONY : serialize.cpp.i
-
-serialize.s: serialize.cpp.s
-.PHONY : serialize.s
-
-# target to generate assembly for a file
-serialize.cpp.s:
-	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/serialize.cpp.s
-.PHONY : serialize.cpp.s
-
 server101.o: server101.cpp.o
 .PHONY : server101.o
 
@@ -367,6 +357,30 @@ server101.cpp.s:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/server101.dir/build.make src/CMakeFiles/server101.dir/server101.cpp.s
 .PHONY : server101.cpp.s
 
+server_player_creation.o: server_player_creation.cpp.o
+.PHONY : server_player_creation.o
+
+# target to build an object file
+server_player_creation.cpp.o:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/server_player_creation.cpp.o
+.PHONY : server_player_creation.cpp.o
+
+server_player_creation.i: server_player_creation.cpp.i
+.PHONY : server_player_creation.i
+
+# target to preprocess a source file
+server_player_creation.cpp.i:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/server_player_creation.cpp.i
+.PHONY : server_player_creation.cpp.i
+
+server_player_creation.s: server_player_creation.cpp.s
+.PHONY : server_player_creation.s
+
+# target to generate assembly for a file
+server_player_creation.cpp.s:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/server_player_creation.cpp.s
+.PHONY : server_player_creation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -374,17 +388,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... client101"
+	@echo "... clientOFW"
 	@echo "... clientqt"
 	@echo "... edit_cache"
-	@echo "... msgserializ"
 	@echo "... rebuild_cache"
 	@echo "... server101"
+	@echo "... serverOFW"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
 	@echo "... client101.o"
 	@echo "... client101.i"
 	@echo "... client101.s"
+	@echo "... client_player_creation.o"
+	@echo "... client_player_creation.i"
+	@echo "... client_player_creation.s"
 	@echo "... clientqt.o"
 	@echo "... clientqt.i"
 	@echo "... clientqt.s"
@@ -397,15 +415,12 @@ help:
 	@echo "... moc_client.o"
 	@echo "... moc_client.i"
 	@echo "... moc_client.s"
-	@echo "... netmsg.pb.o"
-	@echo "... netmsg.pb.i"
-	@echo "... netmsg.pb.s"
-	@echo "... serialize.o"
-	@echo "... serialize.i"
-	@echo "... serialize.s"
 	@echo "... server101.o"
 	@echo "... server101.i"
 	@echo "... server101.s"
+	@echo "... server_player_creation.o"
+	@echo "... server_player_creation.i"
+	@echo "... server_player_creation.s"
 .PHONY : help
 
 

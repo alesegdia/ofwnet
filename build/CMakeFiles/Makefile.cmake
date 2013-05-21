@@ -59,7 +59,8 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/client101.dir/DependInfo.cmake"
+  "src/CMakeFiles/clientOFW.dir/DependInfo.cmake"
   "src/CMakeFiles/clientqt.dir/DependInfo.cmake"
-  "src/CMakeFiles/msgserializ.dir/DependInfo.cmake"
   "src/CMakeFiles/server101.dir/DependInfo.cmake"
+  "src/CMakeFiles/serverOFW.dir/DependInfo.cmake"
   )

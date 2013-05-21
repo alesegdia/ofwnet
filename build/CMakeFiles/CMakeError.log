@@ -37,8 +37,8 @@ Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o
 /usr/bin/c++    -std=c++0x   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o -c /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: En la función ‘int main()’:
 /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:25: error: ‘Q_WS_QWS’ no se declaró en este ámbito
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Error 1
 make[1]: se sale del directorio «/home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp»
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 File /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
@@ -65,8 +65,8 @@ Building CXX object CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o
 /usr/bin/c++    -std=c++0x   -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o -c /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: En la función ‘int main()’:
 /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:25: error: ‘Q_WS_MAC’ no se declaró en este ámbito
-make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Error 1
 make[1]: se sale del directorio «/home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp»
+make[1]: *** [CMakeFiles/cmTryCompileExec.dir/CheckSymbolExists.cxx.o] Error 1
 make: *** [cmTryCompileExec/fast] Error 2
 
 File /home/razieliyo/Dropbox/enet/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:

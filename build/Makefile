@@ -109,6 +109,19 @@ client101/fast:
 .PHONY : client101/fast
 
 #=============================================================================
+# Target rules for targets named clientOFW
+
+# Build rule for target.
+clientOFW: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clientOFW
+.PHONY : clientOFW
+
+# fast build rule for target.
+clientOFW/fast:
+	$(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/build
+.PHONY : clientOFW/fast
+
+#=============================================================================
 # Target rules for targets named clientqt
 
 # Build rule for target.
@@ -120,19 +133,6 @@ clientqt: cmake_check_build_system
 clientqt/fast:
 	$(MAKE) -f src/CMakeFiles/clientqt.dir/build.make src/CMakeFiles/clientqt.dir/build
 .PHONY : clientqt/fast
-
-#=============================================================================
-# Target rules for targets named msgserializ
-
-# Build rule for target.
-msgserializ: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 msgserializ
-.PHONY : msgserializ
-
-# fast build rule for target.
-msgserializ/fast:
-	$(MAKE) -f src/CMakeFiles/msgserializ.dir/build.make src/CMakeFiles/msgserializ.dir/build
-.PHONY : msgserializ/fast
 
 #=============================================================================
 # Target rules for targets named server101
@@ -147,6 +147,19 @@ server101/fast:
 	$(MAKE) -f src/CMakeFiles/server101.dir/build.make src/CMakeFiles/server101.dir/build
 .PHONY : server101/fast
 
+#=============================================================================
+# Target rules for targets named serverOFW
+
+# Build rule for target.
+serverOFW: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 serverOFW
+.PHONY : serverOFW
+
+# fast build rule for target.
+serverOFW/fast:
+	$(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/build
+.PHONY : serverOFW/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -156,9 +169,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... client101"
+	@echo "... clientOFW"
 	@echo "... clientqt"
-	@echo "... msgserializ"
 	@echo "... server101"
+	@echo "... serverOFW"
 .PHONY : help
 
 
