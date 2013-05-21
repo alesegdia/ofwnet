@@ -1,4 +1,5 @@
 # Hashes of file build rules.
 16ff7fc24b1acd2cbb05f3203d58a9ca src/gui/moc_mainwindow.cxx
 e6be6186915257068b8c2544d860a78f src/moc_client.cxx
+5500b3ac9348a3d342c9d8804eb79075 src/netmsg.pb.cc
 aa3e06ce44b04470ad683b9b54e9e4b7 src/ui_mainwindow.h

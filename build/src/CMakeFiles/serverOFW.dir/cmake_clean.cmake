@@ -1,5 +1,8 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/serverOFW.dir/server_player_creation.cpp.o"
+  "CMakeFiles/serverOFW.dir/netmsg.pb.cc.o"
+  "netmsg.pb.cc"
+  "netmsg.pb.h"
   "../../bin/serverOFW.pdb"
   "../../bin/serverOFW"
 )

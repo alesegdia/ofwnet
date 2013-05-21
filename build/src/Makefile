@@ -333,6 +333,33 @@ moc_client.cxx.s:
 	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientqt.dir/build.make src/CMakeFiles/clientqt.dir/moc_client.cxx.s
 .PHONY : moc_client.cxx.s
 
+netmsg.pb.o: netmsg.pb.cc.o
+.PHONY : netmsg.pb.o
+
+# target to build an object file
+netmsg.pb.cc.o:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/netmsg.pb.cc.o
+.PHONY : netmsg.pb.cc.o
+
+netmsg.pb.i: netmsg.pb.cc.i
+.PHONY : netmsg.pb.i
+
+# target to preprocess a source file
+netmsg.pb.cc.i:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.i
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/netmsg.pb.cc.i
+.PHONY : netmsg.pb.cc.i
+
+netmsg.pb.s: netmsg.pb.cc.s
+.PHONY : netmsg.pb.s
+
+# target to generate assembly for a file
+netmsg.pb.cc.s:
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.s
+	cd /home/razieliyo/Dropbox/enet/build && $(MAKE) -f src/CMakeFiles/serverOFW.dir/build.make src/CMakeFiles/serverOFW.dir/netmsg.pb.cc.s
+.PHONY : netmsg.pb.cc.s
+
 server101.o: server101.cpp.o
 .PHONY : server101.o
 
@@ -415,6 +442,9 @@ help:
 	@echo "... moc_client.o"
 	@echo "... moc_client.i"
 	@echo "... moc_client.s"
+	@echo "... netmsg.pb.o"
+	@echo "... netmsg.pb.i"
+	@echo "... netmsg.pb.s"
 	@echo "... server101.o"
 	@echo "... server101.i"
 	@echo "... server101.s"

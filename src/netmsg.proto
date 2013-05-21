@@ -1,20 +1,10 @@
-message create_player_data {
-	required int32 h = 1;
-	required int32 w = 2;
-	required int32 tipo = 3;
-	required string name = 4;
-}
-
-message create_player_response {
-	required bool ok = 1;
-	optional int32 error = 2;
-}
-
 message player_msg {
-	required int32 height = 1;
-	required int32 width = 2;
-	required int32 mes = 3;
-	required string texture = 4;
-	optional int32 life = 5;
-
+    required string name = 1;
+    required int32 pos_x = 2;
+    required int32 pos_y = 3;
+	optional int32 height = 4;
+	optional int32 width = 5;
+	optional int32 mesh = 6;
+	optional int32 texture = 7;
+	optional int32 life = 8;
 }

@@ -3,3 +3,7 @@
 
 src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o
  /home/razieliyo/Dropbox/enet/src/client_player_creation.cpp
+ src/netmsg.pb.h
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o
+ /home/razieliyo/Dropbox/enet/build/src/netmsg.pb.cc
+ /home/razieliyo/Dropbox/enet/build/src/netmsg.pb.h

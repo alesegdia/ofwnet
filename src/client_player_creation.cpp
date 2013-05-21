@@ -58,10 +58,10 @@ int main (int argc, char** argv)
 						<< std::hex << event.peer->address.host << std::endl;
 					break;
 
-				case ENET_EVENT_TYPE_RECEIVE:
+				case ENET_EVENT_TYPE_RECEIVE: {
 					std::cout << "Msg: " << event.packet->data << std::endl;
 
-					std::string msg (event.packet->data);
+					std::string msg ((char*)event.packet->data);
 
 					player_msg pmsg;
 					pmsg.ParseFromString(msg);
@@ -95,6 +95,7 @@ int main (int argc, char** argv)
 					enet_peer_send(event.peer, 0, packetresp);
 					enet_host_flush(client);
 					break;
+				}
 
 				case ENET_EVENT_TYPE_DISCONNECT:
 					std::cout << event.peer->data << " disconnected." << std::endl;

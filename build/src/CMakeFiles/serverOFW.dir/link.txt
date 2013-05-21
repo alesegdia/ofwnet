@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=c++0x -fopenmp    CMakeFiles/serverOFW.dir/server_player_creation.cpp.o  -o ../../bin/serverOFW -rdynamic -lenet -lQtGui -lQtCore -lprotobuf -Wl,-Bstatic -lboost_system-mt -lboost_thread-mt -Wl,-Bdynamic -lopenal 
+/usr/bin/c++    -std=c++0x -fopenmp    CMakeFiles/serverOFW.dir/server_player_creation.cpp.o CMakeFiles/serverOFW.dir/netmsg.pb.cc.o  -o ../../bin/serverOFW -rdynamic -lenet -lQtGui -lQtCore -lprotobuf -Wl,-Bstatic -lboost_system-mt -lboost_thread-mt -Wl,-Bdynamic -lopenal 

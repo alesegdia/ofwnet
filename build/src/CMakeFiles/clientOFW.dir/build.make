@@ -69,14 +69,46 @@ src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o.provides: src/CMakeFil
 
 src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o.provides.build: src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o
 
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o: src/CMakeFiles/clientOFW.dir/flags.make
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o: src/netmsg.pb.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/razieliyo/Dropbox/enet/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o"
+	cd /home/razieliyo/Dropbox/enet/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/clientOFW.dir/netmsg.pb.cc.o -c /home/razieliyo/Dropbox/enet/build/src/netmsg.pb.cc
+
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clientOFW.dir/netmsg.pb.cc.i"
+	cd /home/razieliyo/Dropbox/enet/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/razieliyo/Dropbox/enet/build/src/netmsg.pb.cc > CMakeFiles/clientOFW.dir/netmsg.pb.cc.i
+
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clientOFW.dir/netmsg.pb.cc.s"
+	cd /home/razieliyo/Dropbox/enet/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/razieliyo/Dropbox/enet/build/src/netmsg.pb.cc -o CMakeFiles/clientOFW.dir/netmsg.pb.cc.s
+
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.requires:
+.PHONY : src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.requires
+
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.provides: src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.requires
+	$(MAKE) -f src/CMakeFiles/clientOFW.dir/build.make src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.provides.build
+.PHONY : src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.provides
+
+src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.provides.build: src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o
+
+src/netmsg.pb.cc: ../src/netmsg.proto
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/razieliyo/Dropbox/enet/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Running C++ protocol buffer compiler on netmsg.proto"
+	cd /home/razieliyo/Dropbox/enet/build/src && /usr/bin/protoc --cpp_out /home/razieliyo/Dropbox/enet/build/src -I /home/razieliyo/Dropbox/enet/src /home/razieliyo/Dropbox/enet/src/netmsg.proto
+
+src/netmsg.pb.h: src/netmsg.pb.cc
+
 # Object files for target clientOFW
 clientOFW_OBJECTS = \
-"CMakeFiles/clientOFW.dir/client_player_creation.cpp.o"
+"CMakeFiles/clientOFW.dir/client_player_creation.cpp.o" \
+"CMakeFiles/clientOFW.dir/netmsg.pb.cc.o"
 
 # External object files for target clientOFW
 clientOFW_EXTERNAL_OBJECTS =
 
 ../bin/clientOFW: src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o
+../bin/clientOFW: src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o
 ../bin/clientOFW: /usr/lib/i386-linux-gnu/libenet.so
 ../bin/clientOFW: /usr/lib/i386-linux-gnu/libQtGui.so
 ../bin/clientOFW: /usr/lib/i386-linux-gnu/libQtCore.so
@@ -94,13 +126,15 @@ src/CMakeFiles/clientOFW.dir/build: ../bin/clientOFW
 .PHONY : src/CMakeFiles/clientOFW.dir/build
 
 src/CMakeFiles/clientOFW.dir/requires: src/CMakeFiles/clientOFW.dir/client_player_creation.cpp.o.requires
+src/CMakeFiles/clientOFW.dir/requires: src/CMakeFiles/clientOFW.dir/netmsg.pb.cc.o.requires
 .PHONY : src/CMakeFiles/clientOFW.dir/requires
 
 src/CMakeFiles/clientOFW.dir/clean:
 	cd /home/razieliyo/Dropbox/enet/build/src && $(CMAKE_COMMAND) -P CMakeFiles/clientOFW.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/clientOFW.dir/clean
 
-src/CMakeFiles/clientOFW.dir/depend:
+src/CMakeFiles/clientOFW.dir/depend: src/netmsg.pb.cc
+src/CMakeFiles/clientOFW.dir/depend: src/netmsg.pb.h
 	cd /home/razieliyo/Dropbox/enet/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/razieliyo/Dropbox/enet /home/razieliyo/Dropbox/enet/src /home/razieliyo/Dropbox/enet/build /home/razieliyo/Dropbox/enet/build/src /home/razieliyo/Dropbox/enet/build/src/CMakeFiles/clientOFW.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/clientOFW.dir/depend
 

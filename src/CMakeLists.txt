@@ -9,8 +9,8 @@ set(TARGETS client101
 set(client101_SRC client101.cpp)
 set(server101_SRC server101.cpp)
 set(server_tema_SRC server_player_creation.cpp)
-set(clientOFW_SRC client_player_creation.cpp)
-set(serverOFW_SRC server_player_creation.cpp)
+set(clientOFW_SRC client_player_creation.cpp netmsg.pb.h netmsg.pb.cc)
+set(serverOFW_SRC server_player_creation.cpp netmsg.pb.h netmsg.pb.cc)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 

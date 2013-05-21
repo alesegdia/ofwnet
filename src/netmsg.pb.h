@@ -30,219 +30,9 @@ void  protobuf_AddDesc_netmsg_2eproto();
 void protobuf_AssignDesc_netmsg_2eproto();
 void protobuf_ShutdownFile_netmsg_2eproto();
 
-class create_player_data;
-class create_player_response;
 class player_msg;
 
 // ===================================================================
-
-class create_player_data : public ::google::protobuf::Message {
- public:
-  create_player_data();
-  virtual ~create_player_data();
-  
-  create_player_data(const create_player_data& from);
-  
-  inline create_player_data& operator=(const create_player_data& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _unknown_fields_;
-  }
-  
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return &_unknown_fields_;
-  }
-  
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const create_player_data& default_instance();
-  
-  void Swap(create_player_data* other);
-  
-  // implements Message ----------------------------------------------
-  
-  create_player_data* New() const;
-  void CopyFrom(const ::google::protobuf::Message& from);
-  void MergeFrom(const ::google::protobuf::Message& from);
-  void CopyFrom(const create_player_data& from);
-  void MergeFrom(const create_player_data& from);
-  void Clear();
-  bool IsInitialized() const;
-  
-  int ByteSize() const;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input);
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
-  int GetCachedSize() const { return _cached_size_; }
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const;
-  public:
-  
-  ::google::protobuf::Metadata GetMetadata() const;
-  
-  // nested types ----------------------------------------------------
-  
-  // accessors -------------------------------------------------------
-  
-  // required int32 h = 1;
-  inline bool has_h() const;
-  inline void clear_h();
-  static const int kHFieldNumber = 1;
-  inline ::google::protobuf::int32 h() const;
-  inline void set_h(::google::protobuf::int32 value);
-  
-  // required int32 w = 2;
-  inline bool has_w() const;
-  inline void clear_w();
-  static const int kWFieldNumber = 2;
-  inline ::google::protobuf::int32 w() const;
-  inline void set_w(::google::protobuf::int32 value);
-  
-  // required int32 tipo = 3;
-  inline bool has_tipo() const;
-  inline void clear_tipo();
-  static const int kTipoFieldNumber = 3;
-  inline ::google::protobuf::int32 tipo() const;
-  inline void set_tipo(::google::protobuf::int32 value);
-  
-  // required string name = 4;
-  inline bool has_name() const;
-  inline void clear_name();
-  static const int kNameFieldNumber = 4;
-  inline const ::std::string& name() const;
-  inline void set_name(const ::std::string& value);
-  inline void set_name(const char* value);
-  inline void set_name(const char* value, size_t size);
-  inline ::std::string* mutable_name();
-  inline ::std::string* release_name();
-  
-  // @@protoc_insertion_point(class_scope:create_player_data)
- private:
-  inline void set_has_h();
-  inline void clear_has_h();
-  inline void set_has_w();
-  inline void clear_has_w();
-  inline void set_has_tipo();
-  inline void clear_has_tipo();
-  inline void set_has_name();
-  inline void clear_has_name();
-  
-  ::google::protobuf::UnknownFieldSet _unknown_fields_;
-  
-  ::google::protobuf::int32 h_;
-  ::google::protobuf::int32 w_;
-  ::std::string* name_;
-  ::google::protobuf::int32 tipo_;
-  
-  mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(4 + 31) / 32];
-  
-  friend void  protobuf_AddDesc_netmsg_2eproto();
-  friend void protobuf_AssignDesc_netmsg_2eproto();
-  friend void protobuf_ShutdownFile_netmsg_2eproto();
-  
-  void InitAsDefaultInstance();
-  static create_player_data* default_instance_;
-};
-// -------------------------------------------------------------------
-
-class create_player_response : public ::google::protobuf::Message {
- public:
-  create_player_response();
-  virtual ~create_player_response();
-  
-  create_player_response(const create_player_response& from);
-  
-  inline create_player_response& operator=(const create_player_response& from) {
-    CopyFrom(from);
-    return *this;
-  }
-  
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
-    return _unknown_fields_;
-  }
-  
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
-    return &_unknown_fields_;
-  }
-  
-  static const ::google::protobuf::Descriptor* descriptor();
-  static const create_player_response& default_instance();
-  
-  void Swap(create_player_response* other);
-  
-  // implements Message ----------------------------------------------
-  
-  create_player_response* New() const;
-  void CopyFrom(const ::google::protobuf::Message& from);
-  void MergeFrom(const ::google::protobuf::Message& from);
-  void CopyFrom(const create_player_response& from);
-  void MergeFrom(const create_player_response& from);
-  void Clear();
-  bool IsInitialized() const;
-  
-  int ByteSize() const;
-  bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input);
-  void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const;
-  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const;
-  int GetCachedSize() const { return _cached_size_; }
-  private:
-  void SharedCtor();
-  void SharedDtor();
-  void SetCachedSize(int size) const;
-  public:
-  
-  ::google::protobuf::Metadata GetMetadata() const;
-  
-  // nested types ----------------------------------------------------
-  
-  // accessors -------------------------------------------------------
-  
-  // required bool ok = 1;
-  inline bool has_ok() const;
-  inline void clear_ok();
-  static const int kOkFieldNumber = 1;
-  inline bool ok() const;
-  inline void set_ok(bool value);
-  
-  // optional int32 error = 2;
-  inline bool has_error() const;
-  inline void clear_error();
-  static const int kErrorFieldNumber = 2;
-  inline ::google::protobuf::int32 error() const;
-  inline void set_error(::google::protobuf::int32 value);
-  
-  // @@protoc_insertion_point(class_scope:create_player_response)
- private:
-  inline void set_has_ok();
-  inline void clear_has_ok();
-  inline void set_has_error();
-  inline void clear_has_error();
-  
-  ::google::protobuf::UnknownFieldSet _unknown_fields_;
-  
-  bool ok_;
-  ::google::protobuf::int32 error_;
-  
-  mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(2 + 31) / 32];
-  
-  friend void  protobuf_AddDesc_netmsg_2eproto();
-  friend void protobuf_AssignDesc_netmsg_2eproto();
-  friend void protobuf_ShutdownFile_netmsg_2eproto();
-  
-  void InitAsDefaultInstance();
-  static create_player_response* default_instance_;
-};
-// -------------------------------------------------------------------
 
 class player_msg : public ::google::protobuf::Message {
  public:
@@ -298,53 +88,80 @@ class player_msg : public ::google::protobuf::Message {
   
   // accessors -------------------------------------------------------
   
-  // required int32 height = 1;
+  // required string name = 1;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 1;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const char* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  
+  // required int32 pos_x = 2;
+  inline bool has_pos_x() const;
+  inline void clear_pos_x();
+  static const int kPosXFieldNumber = 2;
+  inline ::google::protobuf::int32 pos_x() const;
+  inline void set_pos_x(::google::protobuf::int32 value);
+  
+  // required int32 pos_y = 3;
+  inline bool has_pos_y() const;
+  inline void clear_pos_y();
+  static const int kPosYFieldNumber = 3;
+  inline ::google::protobuf::int32 pos_y() const;
+  inline void set_pos_y(::google::protobuf::int32 value);
+  
+  // optional int32 height = 4;
   inline bool has_height() const;
   inline void clear_height();
-  static const int kHeightFieldNumber = 1;
+  static const int kHeightFieldNumber = 4;
   inline ::google::protobuf::int32 height() const;
   inline void set_height(::google::protobuf::int32 value);
   
-  // required int32 width = 2;
+  // optional int32 width = 5;
   inline bool has_width() const;
   inline void clear_width();
-  static const int kWidthFieldNumber = 2;
+  static const int kWidthFieldNumber = 5;
   inline ::google::protobuf::int32 width() const;
   inline void set_width(::google::protobuf::int32 value);
   
-  // required int32 mes = 3;
-  inline bool has_mes() const;
-  inline void clear_mes();
-  static const int kMesFieldNumber = 3;
-  inline ::google::protobuf::int32 mes() const;
-  inline void set_mes(::google::protobuf::int32 value);
+  // optional int32 mesh = 6;
+  inline bool has_mesh() const;
+  inline void clear_mesh();
+  static const int kMeshFieldNumber = 6;
+  inline ::google::protobuf::int32 mesh() const;
+  inline void set_mesh(::google::protobuf::int32 value);
   
-  // required string texture = 4;
+  // optional int32 texture = 7;
   inline bool has_texture() const;
   inline void clear_texture();
-  static const int kTextureFieldNumber = 4;
-  inline const ::std::string& texture() const;
-  inline void set_texture(const ::std::string& value);
-  inline void set_texture(const char* value);
-  inline void set_texture(const char* value, size_t size);
-  inline ::std::string* mutable_texture();
-  inline ::std::string* release_texture();
+  static const int kTextureFieldNumber = 7;
+  inline ::google::protobuf::int32 texture() const;
+  inline void set_texture(::google::protobuf::int32 value);
   
-  // optional int32 life = 5;
+  // optional int32 life = 8;
   inline bool has_life() const;
   inline void clear_life();
-  static const int kLifeFieldNumber = 5;
+  static const int kLifeFieldNumber = 8;
   inline ::google::protobuf::int32 life() const;
   inline void set_life(::google::protobuf::int32 value);
   
   // @@protoc_insertion_point(class_scope:player_msg)
  private:
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_pos_x();
+  inline void clear_has_pos_x();
+  inline void set_has_pos_y();
+  inline void clear_has_pos_y();
   inline void set_has_height();
   inline void clear_has_height();
   inline void set_has_width();
   inline void clear_has_width();
-  inline void set_has_mes();
-  inline void clear_has_mes();
+  inline void set_has_mesh();
+  inline void clear_has_mesh();
   inline void set_has_texture();
   inline void clear_has_texture();
   inline void set_has_life();
@@ -352,14 +169,17 @@ class player_msg : public ::google::protobuf::Message {
   
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
   
+  ::std::string* name_;
+  ::google::protobuf::int32 pos_x_;
+  ::google::protobuf::int32 pos_y_;
   ::google::protobuf::int32 height_;
   ::google::protobuf::int32 width_;
-  ::std::string* texture_;
-  ::google::protobuf::int32 mes_;
+  ::google::protobuf::int32 mesh_;
+  ::google::protobuf::int32 texture_;
   ::google::protobuf::int32 life_;
   
   mutable int _cached_size_;
-  ::google::protobuf::uint32 _has_bits_[(5 + 31) / 32];
+  ::google::protobuf::uint32 _has_bits_[(8 + 31) / 32];
   
   friend void  protobuf_AddDesc_netmsg_2eproto();
   friend void protobuf_AssignDesc_netmsg_2eproto();
@@ -373,122 +193,56 @@ class player_msg : public ::google::protobuf::Message {
 
 // ===================================================================
 
-// create_player_data
+// player_msg
 
-// required int32 h = 1;
-inline bool create_player_data::has_h() const {
+// required string name = 1;
+inline bool player_msg::has_name() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void create_player_data::set_has_h() {
+inline void player_msg::set_has_name() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void create_player_data::clear_has_h() {
+inline void player_msg::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
-inline void create_player_data::clear_h() {
-  h_ = 0;
-  clear_has_h();
-}
-inline ::google::protobuf::int32 create_player_data::h() const {
-  return h_;
-}
-inline void create_player_data::set_h(::google::protobuf::int32 value) {
-  set_has_h();
-  h_ = value;
-}
-
-// required int32 w = 2;
-inline bool create_player_data::has_w() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-inline void create_player_data::set_has_w() {
-  _has_bits_[0] |= 0x00000002u;
-}
-inline void create_player_data::clear_has_w() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-inline void create_player_data::clear_w() {
-  w_ = 0;
-  clear_has_w();
-}
-inline ::google::protobuf::int32 create_player_data::w() const {
-  return w_;
-}
-inline void create_player_data::set_w(::google::protobuf::int32 value) {
-  set_has_w();
-  w_ = value;
-}
-
-// required int32 tipo = 3;
-inline bool create_player_data::has_tipo() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-inline void create_player_data::set_has_tipo() {
-  _has_bits_[0] |= 0x00000004u;
-}
-inline void create_player_data::clear_has_tipo() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-inline void create_player_data::clear_tipo() {
-  tipo_ = 0;
-  clear_has_tipo();
-}
-inline ::google::protobuf::int32 create_player_data::tipo() const {
-  return tipo_;
-}
-inline void create_player_data::set_tipo(::google::protobuf::int32 value) {
-  set_has_tipo();
-  tipo_ = value;
-}
-
-// required string name = 4;
-inline bool create_player_data::has_name() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-inline void create_player_data::set_has_name() {
-  _has_bits_[0] |= 0x00000008u;
-}
-inline void create_player_data::clear_has_name() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-inline void create_player_data::clear_name() {
+inline void player_msg::clear_name() {
   if (name_ != &::google::protobuf::internal::kEmptyString) {
     name_->clear();
   }
   clear_has_name();
 }
-inline const ::std::string& create_player_data::name() const {
+inline const ::std::string& player_msg::name() const {
   return *name_;
 }
-inline void create_player_data::set_name(const ::std::string& value) {
+inline void player_msg::set_name(const ::std::string& value) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::kEmptyString) {
     name_ = new ::std::string;
   }
   name_->assign(value);
 }
-inline void create_player_data::set_name(const char* value) {
+inline void player_msg::set_name(const char* value) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::kEmptyString) {
     name_ = new ::std::string;
   }
   name_->assign(value);
 }
-inline void create_player_data::set_name(const char* value, size_t size) {
+inline void player_msg::set_name(const char* value, size_t size) {
   set_has_name();
   if (name_ == &::google::protobuf::internal::kEmptyString) {
     name_ = new ::std::string;
   }
   name_->assign(reinterpret_cast<const char*>(value), size);
 }
-inline ::std::string* create_player_data::mutable_name() {
+inline ::std::string* player_msg::mutable_name() {
   set_has_name();
   if (name_ == &::google::protobuf::internal::kEmptyString) {
     name_ = new ::std::string;
   }
   return name_;
 }
-inline ::std::string* create_player_data::release_name() {
+inline ::std::string* player_msg::release_name() {
   clear_has_name();
   if (name_ == &::google::protobuf::internal::kEmptyString) {
     return NULL;
@@ -499,67 +253,59 @@ inline ::std::string* create_player_data::release_name() {
   }
 }
 
-// -------------------------------------------------------------------
-
-// create_player_response
-
-// required bool ok = 1;
-inline bool create_player_response::has_ok() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-inline void create_player_response::set_has_ok() {
-  _has_bits_[0] |= 0x00000001u;
-}
-inline void create_player_response::clear_has_ok() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-inline void create_player_response::clear_ok() {
-  ok_ = false;
-  clear_has_ok();
-}
-inline bool create_player_response::ok() const {
-  return ok_;
-}
-inline void create_player_response::set_ok(bool value) {
-  set_has_ok();
-  ok_ = value;
-}
-
-// optional int32 error = 2;
-inline bool create_player_response::has_error() const {
+// required int32 pos_x = 2;
+inline bool player_msg::has_pos_x() const {
   return (_has_bits_[0] & 0x00000002u) != 0;
 }
-inline void create_player_response::set_has_error() {
+inline void player_msg::set_has_pos_x() {
   _has_bits_[0] |= 0x00000002u;
 }
-inline void create_player_response::clear_has_error() {
+inline void player_msg::clear_has_pos_x() {
   _has_bits_[0] &= ~0x00000002u;
 }
-inline void create_player_response::clear_error() {
-  error_ = 0;
-  clear_has_error();
+inline void player_msg::clear_pos_x() {
+  pos_x_ = 0;
+  clear_has_pos_x();
 }
-inline ::google::protobuf::int32 create_player_response::error() const {
-  return error_;
+inline ::google::protobuf::int32 player_msg::pos_x() const {
+  return pos_x_;
 }
-inline void create_player_response::set_error(::google::protobuf::int32 value) {
-  set_has_error();
-  error_ = value;
+inline void player_msg::set_pos_x(::google::protobuf::int32 value) {
+  set_has_pos_x();
+  pos_x_ = value;
 }
 
-// -------------------------------------------------------------------
+// required int32 pos_y = 3;
+inline bool player_msg::has_pos_y() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void player_msg::set_has_pos_y() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void player_msg::clear_has_pos_y() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void player_msg::clear_pos_y() {
+  pos_y_ = 0;
+  clear_has_pos_y();
+}
+inline ::google::protobuf::int32 player_msg::pos_y() const {
+  return pos_y_;
+}
+inline void player_msg::set_pos_y(::google::protobuf::int32 value) {
+  set_has_pos_y();
+  pos_y_ = value;
+}
 
-// player_msg
-
-// required int32 height = 1;
+// optional int32 height = 4;
 inline bool player_msg::has_height() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void player_msg::set_has_height() {
-  _has_bits_[0] |= 0x00000001u;
+  _has_bits_[0] |= 0x00000008u;
 }
 inline void player_msg::clear_has_height() {
-  _has_bits_[0] &= ~0x00000001u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void player_msg::clear_height() {
   height_ = 0;
@@ -573,15 +319,15 @@ inline void player_msg::set_height(::google::protobuf::int32 value) {
   height_ = value;
 }
 
-// required int32 width = 2;
+// optional int32 width = 5;
 inline bool player_msg::has_width() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void player_msg::set_has_width() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000010u;
 }
 inline void player_msg::clear_has_width() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline void player_msg::clear_width() {
   width_ = 0;
@@ -595,95 +341,59 @@ inline void player_msg::set_width(::google::protobuf::int32 value) {
   width_ = value;
 }
 
-// required int32 mes = 3;
-inline bool player_msg::has_mes() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+// optional int32 mesh = 6;
+inline bool player_msg::has_mesh() const {
+  return (_has_bits_[0] & 0x00000020u) != 0;
 }
-inline void player_msg::set_has_mes() {
-  _has_bits_[0] |= 0x00000004u;
+inline void player_msg::set_has_mesh() {
+  _has_bits_[0] |= 0x00000020u;
 }
-inline void player_msg::clear_has_mes() {
-  _has_bits_[0] &= ~0x00000004u;
+inline void player_msg::clear_has_mesh() {
+  _has_bits_[0] &= ~0x00000020u;
 }
-inline void player_msg::clear_mes() {
-  mes_ = 0;
-  clear_has_mes();
+inline void player_msg::clear_mesh() {
+  mesh_ = 0;
+  clear_has_mesh();
 }
-inline ::google::protobuf::int32 player_msg::mes() const {
-  return mes_;
+inline ::google::protobuf::int32 player_msg::mesh() const {
+  return mesh_;
 }
-inline void player_msg::set_mes(::google::protobuf::int32 value) {
-  set_has_mes();
-  mes_ = value;
+inline void player_msg::set_mesh(::google::protobuf::int32 value) {
+  set_has_mesh();
+  mesh_ = value;
 }
 
-// required string texture = 4;
+// optional int32 texture = 7;
 inline bool player_msg::has_texture() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000040u) != 0;
 }
 inline void player_msg::set_has_texture() {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000040u;
 }
 inline void player_msg::clear_has_texture() {
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000040u;
 }
 inline void player_msg::clear_texture() {
-  if (texture_ != &::google::protobuf::internal::kEmptyString) {
-    texture_->clear();
-  }
+  texture_ = 0;
   clear_has_texture();
 }
-inline const ::std::string& player_msg::texture() const {
-  return *texture_;
-}
-inline void player_msg::set_texture(const ::std::string& value) {
-  set_has_texture();
-  if (texture_ == &::google::protobuf::internal::kEmptyString) {
-    texture_ = new ::std::string;
-  }
-  texture_->assign(value);
-}
-inline void player_msg::set_texture(const char* value) {
-  set_has_texture();
-  if (texture_ == &::google::protobuf::internal::kEmptyString) {
-    texture_ = new ::std::string;
-  }
-  texture_->assign(value);
-}
-inline void player_msg::set_texture(const char* value, size_t size) {
-  set_has_texture();
-  if (texture_ == &::google::protobuf::internal::kEmptyString) {
-    texture_ = new ::std::string;
-  }
-  texture_->assign(reinterpret_cast<const char*>(value), size);
-}
-inline ::std::string* player_msg::mutable_texture() {
-  set_has_texture();
-  if (texture_ == &::google::protobuf::internal::kEmptyString) {
-    texture_ = new ::std::string;
-  }
+inline ::google::protobuf::int32 player_msg::texture() const {
   return texture_;
 }
-inline ::std::string* player_msg::release_texture() {
-  clear_has_texture();
-  if (texture_ == &::google::protobuf::internal::kEmptyString) {
-    return NULL;
-  } else {
-    ::std::string* temp = texture_;
-    texture_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
-    return temp;
-  }
+inline void player_msg::set_texture(::google::protobuf::int32 value) {
+  set_has_texture();
+  texture_ = value;
 }
 
-// optional int32 life = 5;
+// optional int32 life = 8;
 inline bool player_msg::has_life() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
+  return (_has_bits_[0] & 0x00000080u) != 0;
 }
 inline void player_msg::set_has_life() {
-  _has_bits_[0] |= 0x00000010u;
+  _has_bits_[0] |= 0x00000080u;
 }
 inline void player_msg::clear_has_life() {
-  _has_bits_[0] &= ~0x00000010u;
+  _has_bits_[0] &= ~0x00000080u;
 }
 inline void player_msg::clear_life() {
   life_ = 0;
